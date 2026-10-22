@@ -126,6 +126,11 @@ textarea{min-height:120px;resize:vertical}
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    position: static !important; 
+    box-shadow: none;
+  }
+  
   .header-inner {
     height: auto !important;
     padding: 20px 0;
@@ -139,7 +144,7 @@ textarea{min-height:120px;resize:vertical}
 
   .main-nav ul {
     flex-direction: column !important;
-    gap: 15px;
+    gap: 16px;
     width: 100%;
     align-items: center;
   }
