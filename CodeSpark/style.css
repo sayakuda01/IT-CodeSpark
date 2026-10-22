@@ -47,5 +47,17 @@ textarea{min-height:120px;resize:vertical}
 .footer{background:var(--dark);color:#fff;padding:42px 0;margin-top:40px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}.footer a{color:#d8b4fe}
 
-/* МОБИЛЬНЫЕ СТИЛИ НАМЕРЕННО ОТСУТСТВУЮТ.
-   Проект предназначен для практической по адаптивной верстке. */
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .hero-grid, .course-layout, .about-layout, .contact-layout, .cards, .stats, .team-grid, .course-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-image {
+    width: 100%;
+    height: auto;
+  }
+}
